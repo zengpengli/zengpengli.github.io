@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta name="GENERATOR" content="Mozilla/4.61C-SGI [en] (X11; I; IRIX64 6.5 IP30) [Netscape]">
+   <meta name="Author" content="Yehuda Lindell">
+   <title>Resources for MPC Study</title>
+</head> <body data-new-gr-c-s-check-loaded="8.888.0" data-gr-ext-installed="">
+
+
+
+<h3> <!-- This appears on the title bar --></h3>
+
+<center> <h4> <font size="+3">Resources for Getting Started with MPC</font></h4></center>
+
+<p>
+An often asked question is "how can I get started with MPC (secure 
+multiparty computation)"? I have compiled a select few resources here 
+for studying MPC, with a focus on getting started. This resource is in 
+no way comprehensive, and I am sure that many great resources are 
+missing. If you know of a resource that is missing (yours or someone 
+elses), please send it to me and I'll happily add it.
+</p>
+
+<h3>Books</h3>
+
+Books are always the best way to get started, since they provide a 
+holistic presentation of the field. The following books on MPC all teach
+ a different aspect, and are all helpful:
+<ul>
+<li>
+David Evans, Vladimir Kolesnikov and Mike Rosulek. <a href="https://www.cs.virginia.edu/~evans/pragmaticmpc/pragmaticmpc.pdf" target="_blank">A Pragmatic Introduction to Secure Multi-Party Computation</a>,
+ NOW Publishers, 2018. This short book contains a friendly introduction 
+and comprehensive survey of techniques for achieving efficient secure 
+computation. The book does not go into details regarding each technique 
+and does not provide proofs. However, it gives a fantastic overview and 
+pointers to where you can find all of the details. As such, it is an 
+invaluable resource.
+</li>
+<li>
+Ronald Cramer, Ivan Damgård and Jesper Buus Nielsen. <a href="http://users-cs.au.dk/jbn/cdn/" target="_blank">Secure Multiparty Computation and Secret Sharing</a>,
+ Cambridge University Press, 2015. This book includes definitions, 
+constructions for both the computational and information theoretic 
+settings, techniques for efficiency, and more. This is the most 
+comprehensive treatment of the basics of MPC, and I recommend reading it
+ methodically from the beginning.
+</li>
+<li>
+Carmit Hazay and Yehuda Lindell. <a href="http://u.cs.biu.ac.il/~lindell/efficient-protocols.html" target="_blank">Efficient Secure Two-Party Protocols: Techniques and Constructions</a>,
+ Springer, 2010. This book focuses specifically on the two-party case 
+and efficiency. It includes definitions, general constructions based on 
+the garbled circuit technique, and chapters on specific tools like 
+oblivious transfer, sigma protocols, and more. The specific techniques 
+for general constructions are outdated (with must faster techniques 
+available today), but the text is very relevant for study and includes 
+basic results like a full proof of the security of Yao's garbled 
+circuits construction. 
+</li>
+<li>
+Oded Goldreich. <a href="http://www.wisdom.weizmann.ac.il/~oded/foc-vol2.html" target="_blank">Foundations of Cryptography Vol. 2</a>,
+ Cambridge University Press, 2004. Chapter 7 of the book introduces 
+two-party and multiparty computation, contains a thorough and 
+comprehensive definitional treatment, provides a full and detailed proof
+ of the GMW construction, and surveys advanced topics. The book's formal
+ and rigorous treatment makes it a must-read for the MPC researcher.
+</li>
+<li>
+Thomas Schneider. <a href="https://www.sites.google.com/site/thomaschneider/publications/engineeringsfebook" target="_blank">Engineering Secure Two-Party Computation Protocols</a>,
+ Springer, 2012. This book focuses specifically tools for optimizing 
+secure computation in practice, including circuit optimizations, 
+frameworks for constructing protocols, and more. The book provides a 
+very good overview of different techniques and tools that MPC 
+researchers should be familiar with.
+</li>
+</ul>
+
+<h3>Video Tutorials</h3>
+
+Videos are often a more friendly way of getting started in the field. 
+There are many talks that you can find online. Here, I have tried to 
+compile series of talks that cover the basics or are tutorials in 
+nature.
+<ul>
+<li>  <a href="https://cyber.biu.ac.il/event/the-1st-biu-winter-school/" target="_blank">The 1st BIU Winter School on Secure Computation and Efficiency</a>, 2011. This series of lectures covers the very basics of secure computation and as such is a useful tool. 
+</li>
+<li>  <a href="https://cyber.biu.ac.il/event/the-5th-biu-winter-school/" target="_blank">The 5th BIU Winter School on Advances in Practical Multiparty Computation</a>, 2015. This series of lectures begins with tutorials and includes many more advanced techniques. 
+</li>
+<li> Ran Canetti.  <a href="https://m.youtube.com/playlist?list=PLqc9MPlwib9nSuyH4oUIwPsyDiZ4bwuEE" target="_blank">The Universal Composability Framework</a>, 2016. This series of tutorials introduces the universal composability framework in detail.
+</li>
+</ul>
+
+
+
+
+<h3>Survey Papers</h3>
+
+<ul>
+<li> Yehuda Lindell. <a href="https://eprint.iacr.org/2020/300.pdf" target="_blank">Secure Multiparty Computation (MPC)</a>,
+ Communications of the ACM, January 2021. This is a general and friendly
+ introduction to secure multiparty computation - what it is, how it 
+works, and what it is used for.
+</li>
+<li>
+Yehuda Lindell. <a href="https://eprint.iacr.org/2016/046.pdf" target="_blank">How to Simulate It - A Tutorial on the Simulation Proof Technique</a>,
+ 2016. The simulation paradigm is fundamental to secure computation. 
+However, many have difficulties in understanding how to write simulation
+ proofs. This tutorial explains this proof technique in great detail.
+</li>
+<li>
+Manoj Prabhakaran and Amit Sahai (Eds.). <a href="http://ebooks.iospress.com/volume/secure-multi-party-computation" target="_blank">Secure Multi-Party Computation</a>,
+ IOS Press, 2013. This is a compilation of surveys on the topic of 
+multiparty computation. It focuses on theoretical aspects and is highly 
+useful for those wishing to study the theory of MPC. 
+</li>
+</ul>
+
+<h3>Other</h3>
+
+<ul>
+<li>
+Another compilation of MPC resources, maintained by Dragos Rotaru: <a href="https://github.com/rdragos/awesome-mpc" target="_blank">https://github.com/rdragos/awesome-mpc</a>.
+</li>
+<li>
+Lectures and scribe notes (including references to papers) from a course by Jonathan Katz on Secure Computation: <a href="http://www.cs.umd.edu/~jkatz/gradcrypto2/f13/scribes.html" target="_blank">http://www.cs.umd.edu/~jkatz/gradcrypto2/f13/scribes.html</a>.
+</li>
+</ul>
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
