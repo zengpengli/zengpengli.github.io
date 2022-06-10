@@ -1,0 +1,567 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta name="GENERATOR" content="Mozilla/4.61C-SGI [en] (X11; I; IRIX64 6.5 IP30) [Netscape]">
+   <meta name="Author" content="Zengpeng Li">
+   <title>mpc-sd04630460</title>
+</head> <body data-new-gr-c-s-check-loaded="8.888.0" data-gr-ext-installed="">
+
+
+
+<h3> <!-- This appears on the title bar --></h3>
+
+<center> <h4> <font size="+3">（TBD）Selected Topics in Secure Multipart Computing <br> 安全多方计算选讲(SQ0461049H)</font></h4>
+<font size="+3"> (Continued) Secure Multipart Computing <br> 安全多方计算(sd04630460)</font></h4>
+
+</center>
+
+<h3> Instructor: Zengpeng Li  and Hong-Sheng Zhou
+</h3> 淦昌苑D座(K4)403
+
+<h3> Course coordinator: Puwen Wei </h3> 淦昌苑D座(K4)319
+
+    <h3>Course Syllabus</h3>
+   This course will cover topics in secure mult-party computation. 
+<ul>
+<li>
+ <strong>Models of Secure Computation:</strong> Honest vs. Dishonest majority settings, semi-honest vs active(malicious) adversary, static vs. adaptive computation, computational vs. information theoretic security, synchronous vs. asynchronous network...
+</li>
+<li>  
+<strong>Defining Secure Computation:</strong>  Computational/statistical Indistinguishability, Real-Ideal World or Simulation-based Security notions.
+</li>
+<li>  
+<strong>Secure computation with semi-honest security:</strong>  Honest-majority Setting: Secret Sharing, BenOr-Goldwasser-Wigderson (BGW) Construction, Optimizations (MPC in preprocessing mode and circuit randomization), Cramer-Damgaard-Neilsen (CDN) Construction. Dishonest majority Setting: Oblivious Transfers (OT), two-party Goldreich-Micali-Wigderson (GMW) construction, Optimizations of GMW (Random input OT and OT extension), Yao construction, BMR construction and multi-party GMW construction.
+</li>
+<li>  
+<strong>Secure computation with Active security:</strong>  Honest Majority Setting. Verifiable Secret Sharing, BGW Construction with active security, Hyper-invertible Matrices and Beerliova-Hirt (BH) Construction, Information Checking Protocol. Dishonest majority Setting: Commitment Schemes, Zero-knowledge, GMW Compiler for active corruption, Cut-and-Choose OT and Lindell-Pinkas Construction.
+</li>
+<li>  
+<strong>Practical Secure Computation:</strong>  Secure Set Intersection, Privacy Preserving Biometrics & Genomics, Secure Cloud Computing 
+
+</li> 
+  
+   
+ </ul>
+   
+   
+  <h3>Grading:</h3> Homeworks and a final large homework.   
+   
+   
+<h3>Schedule of Courses and Presentation Materials</h3>
+
+   
+<em>Please note:</em> The references below are chosen for pedagogical 
+reasons, not historical ones. Also, the scribe notes have for the most 
+part not been edited by me, and may contain errors. Most of scribe notes are from Jonathan Katz.
+   
+<ul>
+   
+<li><strong>[March XX: Lecture 1-1]</strong>
+<br>Introduction. Computational indistinguishability.
+Defining secure multi-party computation in the semi-honest setting.
+<br><strong>References:</strong> 
+<ul>
+<li>Computational indistinguishability is covered in <a href="http://www.cs.umd.edu/~jkatz/imc.html">Katz-Lindell, Chapter 6</a> or <a href="http://www.wisdom.weizmann.ac.il/~oded/foc-drafts.html">Goldreich, vol. 1, Chapter 3</a>
+</li>
+<li>Good surveys of secure computation include
+<a href="http://eprint.iacr.org/2008/197">Lindell-Pinkas 2008</a> and <a href="http://eprint.iacr.org/2006/465">Canetti 2006</a>
+</li>
+</ul>
+<br>   
+   
+   
+<li><strong>[March XX: Lecture 1-2] </strong>
+<br>Defining secure multi-party computation in the semi-honest setting.
+Real worlds, ideal worlds, and hybrid worlds. Composition.
+<br><strong>References:</strong>
+Definitions of secure computation, and the composition theorem, are covered in <a href="http://link.springer.com/article/10.1007%2Fs001459910006">Canetti
+2000</a>
+<br><a href="http://www.cs.umd.edu/~jkatz/gradcrypto2/f13/lecture2.pdf">scribe notes</a>
+<br>
+   
+<li><strong>[March XX: Lecture 2-1]</strong>
+<br>Oblivious transfer (OT) in the semi-honest setting.
+<br><strong>References:</strong>
+<a href="http://www.wisdom.weizmann.ac.il/~oded/foc-vol2.html">Goldreich, vol. 2, Chapter 7</a>, <a href="http://www.pinkas.net/PAPERS/effot.ps">Naor-Pinkas 2001</a>
+<br><a href="http://www.cs.umd.edu/~jkatz/gradcrypto2/f13/lecture3.pdf">scribe notes</a>
+<br><strong>Interesting Links:</strong> 
+<a href="https://eprint.iacr.org/2015/267.pdf"> Tung Chou and Claudio Orlandi. The Simplest Protocol for Oblivious Transfer</a>  
+<br>
+   
+<li><strong>[March XX: Lecture 2-2] </strong>
+<br>OT in the semi-honest setting, continued. 1-out-of-N OT.
+<br><strong>References:</strong> <a href="http://eprint.iacr.org/2007/348">Peikert et al. 2008</a>, <a href="http://www.springerlink.com/index/10.1007/s00145-004-0102-6">Naor-Pinkas 2005</a>
+<br><a href="http://www.cs.umd.edu/~jkatz/gradcrypto2/f13/lecture4.pdf">scribe notes</a>
+<br>
+   
+
+<li><strong>[April XX: Lecture 2-3] </strong>
+<br>OT extension. 
+<br><strong>References:</strong> <a href="http://www.cs.bgu.ac.il/~kobbi/papers/OTextend_proc.pdf">Ishai et al.</a> (OT extension), 
+<br><a href="http://www.cs.umd.edu/~jkatz/gradcrypto2/f13/lecture5.pdf">scribe notes</a>
+ (Note: the protocol in Section 1.1 is only secure if a single instance 
+of the online phase is run per instance of the pre-processing phase.)
+   <br><a href="https://github.com/osu-crypto/libOTe"> OT extension lib</a>
+
+ <br><strong>Interesting Links:</strong> <a href="https://www.cs.cornell.edu/~asharov/slides/ALSZ13.pdf">Yehuda Lindell et al. 2013</a>   
+<a href="https://www.csa.iisc.ac.in/~cris/MPCWorkshop/ppts/Talk3_3.pdf">Peter Scholl 2020</a>  
+<a href="https://www.cse.iitb.ac.in/~mp/crypto/mpc2017/slides/day2/arpita-OT.pdf">Arpita Patra</a>  
+ <a href="https://csrc.nist.gov/CSRC/media/Events/mpts2020/slides/mpts2020-2b1-talk-emmanuela-peter.pdf">Emmanuela Orsini and Peter Scholl</a>
+ 
+ <br>
+
+
+<li><strong>[April XX:  Lecture 3-1] </strong>
+<br>The GMW protocol. Proof of security for the GMW protocol. Yao's garbled-circuit approach.
+<br><strong>References:</strong> 
+<a href="http://www.wisdom.weizmann.ac.il/~oded/foc-vol2.html">Goldreich, vol. 2, Chapter 7</a> (the GMW protocol),
+<a href="http://www.wisdom.weizmann.ac.il/~oded/foc-vol2.html">Goldreich, vol. 2, Chapter 7</a>, 
+<a href="http://eprint.iacr.org/2004/175">Lindell-Pinkas 2009</a>
+<br><a href="http://www.cs.umd.edu/~jkatz/gradcrypto2/f13/lecture6.pdf">scribe notes</a>
+<br>   
+   
+   
+ <li><strong>[April XX: Lecture 3-2] </strong>
+<br>
+Optimizations (and implementations) of garbled circuits.
+<br><strong>References:</strong> <a href="http://www.cs.toronto.edu/~vlad/papers/XOR_ICALP08.pdf">Kolesnikov-Schneider 2008</a>,
+<a href="http://eprint.iacr.org/2009/314.pdf">PSSW09</a>,
+ Bellare et al. <a href="https://eprint.iacr.org/2012/265">#1</a>,
+<a href="https://eprint.iacr.org/2012/564">#2</a>, and
+ <a href="https://eprint.iacr.org/2013/426">#3</a>,
+<a href="http://thomaschneider.de/papers/ALSZ13.pdf">Asharov et al. 2013</a>
+<br><a href="http://www.cs.umd.edu/~jkatz/gradcrypto2/f13/lecture8.pdf">scribe notes</a>
+<br>
+    
+ 
+    
+ <li><strong>[April XX: Lecture 3-3] </strong>
+<br>Implementations of semi-honest secure two-party computation.
+<br>
+<strong>References:</strong>
+<a href="http://www.pinkas.net/PAPERS/MNPS.pdf">Fairplay</a>, <a href="http://thomaschneider.de/papers/HKSSW10.pdf">TASTY</a> (see also <a href="http://eprint.iacr.org/2010/079">here</a>),
+<a href="http://www.cs.umd.edu/~jkatz/papers/usenix2011.pdf">Huang et al. 2011</a>, <a href="http://eprint.iacr.org/2011/257">Choi et al.</a>, <a href="http://thomaschneider.de/papers/SZ13.pdf">Schneider-Zohner 2013</a>
+<br><a href="http://www.cs.umd.edu/~jkatz/gradcrypto2/f13/lecture9.pdf">scribe notes</a>
+<br>
+    
+    
+<li><strong>[May XX: Lecture 4-1] </strong>
+<br> Beaver Triple Based-Protocols. ABY Secret Sharing. SPDZ Sharing.
+<br><strong>References:</strong> 
+<ul>
+<li>
+<a href="https://wiki.mpcalliance.org/beaver.html"> Beaver Triple Based-Protocols; </a> 
+<a href="https://github.com/encryptogroup/ABY"> ABY Github Repository; </a> 
+<a href="https://github.com/bristolcrypto/SPDZ-2"> SPDZ-2 Github Repository; </a> 
+<a href="https://github.com/data61/MP-SPDZ"> Multi-Protocol SPDZ Github Repository; </a> 
+
+</li>   
+<li>   
+<a href="https://crypto.stanford.edu/cs355/18sp/lec7.pdf">ABY from Stanford Uni CS355;</a>
+<a href="https://www.cs.utexas.edu/~dwu4/courses/sp20/static/lecture25.pdf">ABY from David Wu;</a>
+</li>
+<li>
+<a href="https://courses.cs.ut.ee/MTAT.07.014/2020_fall/uploads/Main/spdz-exercises-with-solutions.pdf"> MTAT.07.014 Cryptographic Protocols from Pille Pullonen (2020 fall);</a>
+<a href="https://courses.cs.ut.ee/MTAT.07.014/2019_fall/uploads/Main/spdz.pdf"> MTAT.07.014 Cryptographic Protocols from Pille Pullonen (2020 fall);</a>
+</li>
+<li>
+<a href="https://www.csa.iisc.ac.in/~cris/MPCWorkshop/ppts/Talk1_3.pdf"> ABY from Peter Scholl (a brief tutorial);</a>   
+<a href="https://simons.berkeley.edu/sites/default/files/docs/15669/simons-spdz.pdf"> ABY at simons from <a href="https://pascholl.github.io/publications">Peter Scholl</a>;</a>  
+</li>
+</ul>
+<a href="https://github.com/encryptogroup/ABY">scribe notes</a>
+<br>   
+
+    
+    
+    
+    
+<li><strong>[May XX: Lecture 9] </strong>
+<br>Secure computation using FHE. Oblivious RAM, and secure computation in the RAM model of computation.
+<br><strong>References:</strong> <a href="http://dl.acm.org/citation.cfm?id=233553">Goldreich-Ostrovsky '96</a> (link only works within UMD), <a href="http://www.cs.umd.edu/~jkatz/papers/oram.pdf">Gordon et al.</a>
+<br><a href="http://www.cs.umd.edu/~jkatz/gradcrypto2/f13/lecture11.pdf">scribe notes</a>
+<br>
+   
+ 
+ <li><strong>[May XX: Lecture 10] </strong>
+<br>Sublinear-time secure computation. "Special-purpose" protocols. Private set intersection.
+<br><strong>References</strong>: <!-- <a href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.10.2829">Aggarwal et al.</a>, -->
+<a href="http://www.pinkas.net/PAPERS/FNP04.pdf">Freedman et al. 2004</a>,
+<!-- <a href="http://www.pinkas.net/PAPERS/acns09.pdf">Jarrous and Pinkas</a>, -->
+<a href="http://www.cs.umd.edu/~jkatz/papers/psi.pdf">Huang et al. 2012</a>
+<br><a href="http://www.cs.umd.edu/~jkatz/gradcrypto2/f13/lecture12.pdf">scribe notes</a>
+<br>
+    
+    
+ <li><strong>[May XX: Lecture 11] </strong>
+<br>Semi-honest multi-party computation. Information-theoretic security.
+<br><strong>References:</strong>
+<a href="http://www.wisdom.weizmann.ac.il/~oded/foc-vol2.html">Goldreich, vol. 2, Chapter 7</a>, <a href="http://eccc.hpi-web.de/report/2011/036/">Asharov-Lindell</a>,
+<a href="http://www.cs.umd.edu/~jkatz/gradcrypto2/f13/mpc-book.pdf">Cramer et al., Chapter 3</a>
+<br><a href="http://www.cs.umd.edu/~jkatz/gradcrypto2/f13/lecture13.pdf">scribe notes</a>
+<br>
+    
+  
+ <li><strong>[May XX: Lecture 12] </strong>
+<br>The BGW protocol in the semi-honest setting, continued.
+Multi-party computation in constant rounds (the Beaver-Micali-Rogaway protocol).
+<br><strong>References:</strong> <a href="http://www.cs.ucdavis.edu/~rogaway/papers/thesis.pdf">Rogaway's thesis</a>
+<br><a href="http://www.cs.umd.edu/~jkatz/gradcrypto2/f13/lecture14.pdf">scribe notes</a>
+<br>
+    
+    
+    
+ <li><strong>[June XX: Lecture 13] </strong>
+<br>Implementations of multi-party computation with semi-honest security. Defining malicious security.
+<br><strong>References:</strong> <ul>
+<li>Implementations: <a href="http://www.cs.huji.ac.il/~noam/FairplayMP.pdf">FairplayMP</a>, <a href="http://www.securescm.org/">SecureSCM</a>, <a href="http://eprint.iacr.org/2008/068.pdf">sugar-beet auction</a>, <a href="http://www.usenix.org/event/sec10/tech/full_papers/Burkhart.pdf">SEPIA</a>, <a href="http://aeolus.ceid.upatras.gr/scientific-reports/3rd_year_reports/sharemind_full.pdf">Sharemind</a>, <a href="http://eprint.iacr.org/2008/415.pdf">VIFF</a>, <a href="http://eprint.iacr.org/2011/662.pdf">MPC for financial-data analysis</a>, <a href="http://eprint.iacr.org/2011/257">Choi et al.</a>
+</li><li>Definitions of malicious security: <a href="http://link.springer.com/article/10.1007%2Fs001459910006">Canetti 2000</a>, <a href="http://www.wisdom.weizmann.ac.il/~oded/foc-vol2.html">Goldreich, vol. 2, Chapter 7</a>, <a href="http://eprint.iacr.org/2008/197">Lindell-Pinkas 2008</a>
+</li></ul>
+<a href="http://www.cs.umd.edu/~jkatz/gradcrypto2/f13/lecture15.pdf">scribe notes</a>
+<br>
+    
+    
+    
+<li><strong>[June XX: Lecture 14] </strong>
+<br> Zero-knowledge proofs/arguments. A zero-knowledge proof of Hamiltonicity.
+<br><strong>References:</strong> <a href="http://www.wisdom.weizmann.ac.il/~oded/zk-tut02.html">Goldreich's survey</a>
+<br><a href="http://www.cs.umd.edu/~jkatz/gradcrypto2/f13/lecture16.pdf">scribe notes</a>
+<br>
+   
+   
+ <li><strong>[June XX: Lecture 15] </strong>
+<br>Sequential vs. parallel composition of ZK proofs. Proofs of knowledge.
+<br><strong>References:</strong> <a href="http://www.cs.umd.edu/~jkatz/gradcrypto2/scribes.html">Lecture notes from grad cryptography class</a> (note: sometimes buggy)
+<br><a href="http://www.cs.umd.edu/~jkatz/gradcrypto2/f13/lecture17.pdf">scribe notes</a>
+<br>
+    
+    
+ <li><strong>[June XX: Lecture 16] </strong>
+<br>Witness indistinguishability. A constant-round ZK argument of knowledge.
+Constant-round two-party coin-tossing with malicious security.
+<br><strong>References:</strong> <a href="http://link.springer.com/chapter/10.1007%2F0-387-34805-0_46">Feige-Shamir</a>, <a href="http://www.cs.umd.edu/~jkatz/gradcrypto2/scribes.html">grad crypto scribe notes, Lecture 24</a>, <a href="http://www.wisdom.weizmann.ac.il/~oded/foc-vol2.html">Goldreich, vol. 2, Chapter 7</a>, <a href="https://eprint.iacr.org/2001/107">Lindell 2003</a>
+<br><a href="http://www.cs.umd.edu/~jkatz/gradcrypto2/f13/lecture19.pdf">scribe notes</a>
+<br>
+    
+    
+<li><strong>[June XX: Lecture 17] </strong>
+<br>Using zero knowledge for secure multi-party computation (with abort) in the malicious setting (assuming broadcast).
+<br><strong>References:</strong> <a href="http://www.wisdom.weizmann.ac.il/~oded/foc-vol2.html">Goldreich, vol. 2, Chapter 7</a>, <a href="https://eprint.iacr.org/2001/107">Lindell 2003</a>
+<br><a href="http://www.cs.umd.edu/~jkatz/gradcrypto2/f13/lecture20.pdf">scribe notes</a>
+<br>
+   
+   
+ <li><strong>[June XX: Lecture 18]</strong>
+<br>Protocols for broadcast/Byzantine agreement.
+<br><strong>References:</strong> <a href="http://www.cs.umd.edu/~jkatz/gradcrypto2/scribes.html">Lecture 26</a>, <a href="http://www.cs.umd.edu/~jkatz/gradcrypto2/f13/BA.pdf">Notes on Byzantine agreement</a>
+<br>
+    
+<li><strong>[June XX: Lecture 19] </strong>
+<br>Fully secure computation with honest majority.
+<br><strong>References:</strong> <a href="http://www.wisdom.weizmann.ac.il/~oded/foc-vol2.html">Goldreich, vol. 2, Chapter 7</a>
+<br><a href="http://www.cs.umd.edu/~jkatz/gradcrypto2/f13/lecture22.pdf">scribe notes</a>
+<br>
+    
+   
+<li><strong>[June XX: Lecture 20] </strong>
+<br>Cut-and-choose for efficient secure two-party computation.
+<br><strong>References:</strong> <a href="http://eprint.iacr.org/2008/049">Lindell-Pinkas 2007</a>
+<br>
+   
+ 
+<li><strong>[June XX: Lecture 21] </strong>
+<br>Efficient two-party computation with 1-bit leakage.
+<br><strong>References:</strong> <a href="http://www.cs.umd.edu/~jkatz/papers/SP12.pdf">Huang et al.</a>
+<br><a href="http://www.cs.umd.edu/~jkatz/gradcrypto2/f13/lecture25.pdf">scribe notes</a>
+<br>
+   
+   
+ <li><strong>[June XX: Lecture 22] </strong>
+<br>Knowledge inference for optimizing secure MPC.
+<br><strong>References:</strong> <a href="http://www.cs.umd.edu/~mwh/papers/rastogi13knowledge.html">Rastogi et al.</a>
+<br><a href="http://www.cs.umd.edu/~jkatz/gradcrypto2/f13/lecture26.pdf">scribe notes</a>
+<br>
+    
+  
+ <li><strong>[June XX: Lecture 23] </strong>
+<br>Covert security.
+<br><strong>References:</strong> <a href="https://eprint.iacr.org/2007/060">Aumann-Lindell</a>, <a href="https://eprint.iacr.org/2012/708">Asharov-Orlandi</a>
+<br><a href="http://www.cs.umd.edu/~jkatz/gradcrypto2/f13/lecture27.pdf">scribe notes</a>
+<br>
+    
+<li><strong>[June XX: Lecture 24] </strong>
+<br>Rational secret sharing and multi-party computation.
+<br><strong>References:</strong> <a href="http://eprint.iacr.org/2006/142">Gordon-Katz</a>, <a href="http://eprint.iacr.org/2008/488">Fuchsbauer et al.</a>, <a href="http://eprint.iacr.org/2011/396">Groce-Katz</a>
+<br><a href="http://www.cs.umd.edu/~jkatz/gradcrypto2/f13/lecture28.pdf">scribe notes</a>
+<br>
+   
+<li><strong>[June XX: Lecture 25] </strong>
+<br>The BGW protocol in the malicious setting.
+<br><strong>References:</strong> <a href="http://eccc.hpi-web.de/report/2011/036/">Asharov-Lindell</a>
+<br><a href="http://www.cs.umd.edu/~jkatz/gradcrypto2/f13/lecture29.pdf">scribe notes</a>
+<br>   
+   
+   
+ <li><strong>[June XX: Lecture 26] </strong>
+<br>The BGW protocol in the malicious setting, continued.
+<br><a href="http://www.cs.umd.edu/~jkatz/gradcrypto2/f13/lecture30.pdf">scribe notes</a>
+<br>
+    
+    
+<li><strong>[June XX: Lecture 27] </strong>
+<br>Finish up BGW. More efficient cut-and-choose in the two-party setting.
+<br><strong>References:</strong> <a href="https://eprint.iacr.org/2013/079">Lindell 2013</a>, <a href="https://eprint.iacr.org/2013/081">Huang et al. 2013</a>
+<br>    
+    
+ <li><strong>[June XX: Lecture 28] </strong>
+<br>Authenticated data structures, generically.
+<br><strong>References:</strong> <a href="http://www.cs.umd.edu/~jkatz/papers/ADS.pdf">Miller et al.</a>
+<br>
+    
+    
+<li><strong>[June XX: Lecture 29] </strong>
+<br>The IPS compiler.
+<br><strong>References:</strong> <a href="http://www.cs.uiuc.edu/~mmp/pub/mpc-ot.pdf">Ishai-Prabhakaran-Sahai</a>, <a href="http://eprint.iacr.org/2011/435">Lindell-Pinkas-Oxman</a>
+<br>    
+   
+<li><strong>[June XX: Lecture 30] </strong>
+<br>(Efficient) zero knowledge from secure computation.
+<br><strong>References:</strong> <a href="http://cs.ucla.edu/~rafail/PUBLIC/77.pdf">Ishai et al.</a>, <a href="http://eprint.iacr.org/2013/073.pdf">Jawurek et al.</a>
+<br>
+   
+   
+<li><strong>[June XX: Lecture 31] </strong>
+<br>The Damgard-Orlandi protocol for malicious MPC without honest majority.
+<br><strong>References:</strong> <a href="http://eprint.iacr.org/2010/318">Damgard-Orlandi</a> (see also <a href="https://eprint.iacr.org/2010/224">here</a> for an implementation)
+<br>
+   
+<li><strong>[June XX: Lecture 32] </strong>
+Universal composability. Impossibility in the plain model, and UC commitment in the CRS model.
+<br><strong>References:</strong> <a href="http://eprint.iacr.org/2000/067">Canetti 2001</a>, <a href="http://eprint.iacr.org/2006/465">Canetti 2006</a>, <a href="http://eprint.iacr.org/2001/055">Canetti-Fischlin</a>, <a href="http://eprint.iacr.org/2002/140">CLOS</a>
+<br>
+   
+<li><strong>[June XX: Lecture 33] </strong>
+<br>UC two-party computation in the CRS model.
+<br><strong>References:</strong> <a href="http://eprint.iacr.org/2002/140">CLOS</a>
+<br>
+   
+   
+<li><strong>[June XX: Lecture 33] </strong>
+<br>Fairness without an honest majority.
+<br><strong>References:</strong> <a href="http://vvv.cs.ut.ee/~swen/courses/crypto-ii/2008/cleve1986.pdf">Cleve 1986</a>, <a href="http://eprint.iacr.org/2009/214">Moran-Naor-Segev</a>, <a href="http://eprint.iacr.org/2008/206">Gordon-Katz</a>
+<br>
+   
+   
+<li><strong>[June XX: Lecture 34] </strong>
+<br>Impossibility results.
+<br><strong>References:</strong> <a href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.17.2901">Goldreich-Oren</a>, <a href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.39.7073">Goldreich-Krawczyk</a>
+<br>   
+   
+   
+   
+<li><strong>[Dec 13: Final exam (in class)] </strong>
+<br><br>
+
+</li> 
+   
+<li>
+  Awesome-mpc, maintained by github:  <a href="https://github.com/rdragos/awesome-mpc" target="_blank">https://github.com/rdragos/awesome-mpc</a>.
+</li>
+</li> 
+  
+   
+ </ul>   
+
+
+<h3>Useful Lectures and Scribe Notes </h3>
+<ul>
+ <li>
+ Instructor: Arpita Patra. <a href="https://www.csa.iisc.ac.in/~arpita/SecureComputation15.html#syllabus" target="_blank"> Secure Computing </a>.  
+ </li>
+   
+<li>
+Instructor: Ran Canetti, Spring 2009. <a href="http://www.cs.tau.ac.il/~canetti/sp09-seminar.html" target="_blank"> Seminar in Cryptographic Protocols </a>.   
+</li>
+ 
+<li>
+Instructor: Benny Pinkas, Spring semester 2014. <a href="http://www.pinkas.net/sc/2014/course.html" target="_blank"> Secure Computing </a>.   
+</li> 
+  
+<li>
+ <a href="https://homes.esat.kuleuven.be/~nsmart/FHE-MPC/" target="_blank"> FHE-MPC Advanced Grad Course </a>.    
+</li>
+
+<li>
+Instructor: Jonathan Katz on Secure Computation: <a href="http://www.cs.umd.edu/~jkatz/gradcrypto2/f13/scribes.html" target="_blank">http://www.cs.umd.edu/~jkatz/gradcrypto2/f13/scribes.html</a>.
+</li>
+   
+
+<li>
+Instructor: Mike Rosulek on 2PC Course: <a href="https://web.engr.oregonstate.edu/~rosulekm/" target="_blank">https://web.engr.oregonstate.edu/~rosulekm/</a>.
+</li>
+   
+ </ul>
+
+
+
+
+<p>
+Some Resources for Getting Started with MPC are selected from <a href="https://u.cs.biu.ac.il/~lindell/MPC-resources.html" target="_black">Yehuda Lindell</a> and  <a href="https://www.csa.iisc.ac.in/~arpita/" target="_black">Arpita Patra </a>
+</p>   
+<h3>Books</h3>
+
+Books are always the best way to get started, since they provide a 
+holistic presentation of the field. The following books on MPC all teach
+ a different aspect, and are all helpful:
+<ul>
+<li>
+David Evans, Vladimir Kolesnikov and Mike Rosulek. <a href="https://www.cs.virginia.edu/~evans/pragmaticmpc/pragmaticmpc.pdf" target="_blank">A Pragmatic Introduction to Secure Multi-Party Computation</a>,
+ NOW Publishers, 2018. This short book contains a friendly introduction 
+and comprehensive survey of techniques for achieving efficient secure 
+computation. The book does not go into details regarding each technique 
+and does not provide proofs. However, it gives a fantastic overview and 
+pointers to where you can find all of the details. As such, it is an 
+invaluable resource. Refer to <a href="https://securecomputation.org/" target="_blank">Pragmatic MPC</a>.
+</li>
+
+<li>
+Ronald Cramer, Ivan Damgård and Jesper Buus Nielsen. <a href="http://users-cs.au.dk/jbn/cdn/" target="_blank">Secure Multiparty Computation and Secret Sharing</a>,
+ Cambridge University Press, 2015. This book includes definitions, 
+constructions for both the computational and information theoretic 
+settings, techniques for efficiency, and more. This is the most 
+comprehensive treatment of the basics of MPC, and I recommend reading it
+ methodically from the beginning.
+</li>
+<li>
+Carmit Hazay and Yehuda Lindell. <a href="http://u.cs.biu.ac.il/~lindell/efficient-protocols.html" target="_blank">Efficient Secure Two-Party Protocols: Techniques and Constructions</a>,
+ Springer, 2010. This book focuses specifically on the two-party case 
+and efficiency. It includes definitions, general constructions based on 
+the garbled circuit technique, and chapters on specific tools like 
+oblivious transfer, sigma protocols, and more. The specific techniques 
+for general constructions are outdated (with must faster techniques 
+available today), but the text is very relevant for study and includes 
+basic results like a full proof of the security of Yao's garbled 
+circuits construction. 
+</li>
+<li>
+Oded Goldreich. <a href="http://www.wisdom.weizmann.ac.il/~oded/foc-vol2.html" target="_blank">Foundations of Cryptography Vol. 2</a>,
+ Cambridge University Press, 2004. Chapter 7 of the book introduces 
+two-party and multiparty computation, contains a thorough and 
+comprehensive definitional treatment, provides a full and detailed proof
+ of the GMW construction, and surveys advanced topics. The book's formal
+ and rigorous treatment makes it a must-read for the MPC researcher.
+</li>
+<li>
+Thomas Schneider. <a href="https://www.sites.google.com/site/thomaschneider/publications/engineeringsfebook" target="_blank">Engineering Secure Two-Party Computation Protocols</a>,
+ Springer, 2012. This book focuses specifically tools for optimizing 
+secure computation in practice, including circuit optimizations, 
+frameworks for constructing protocols, and more. The book provides a 
+very good overview of different techniques and tools that MPC 
+researchers should be familiar with.
+</li>
+ 
+<li>
+ Mahdi Zamani and Mahnush Movahedi, <a href="http://mahdiz.com/crypto/basics/" target="_blank">Reference on Cryptography</a>, including Notions of Security (e.g., rushing adversary)
+   </li>
+ 
+   <li>
+ Ittai Abraham. Decentralized Thoughts
+<a href="https://decentralizedthoughts.github.io/2019-06-07-modeling-the-adversary/" target="_blank">The power of the adversary</a>.
+      <li>
+   
+</ul>
+
+
+<h3>Survey Papers</h3>
+
+<ul>
+ 
+   
+ <li>
+  Marcella Hastings, Brett Hemenway, Daniel Noble, and Steve Zdancewic. <a href="https://marsella.github.io/static/mpcsok.pdf" target="_blank"> SoK: General Purpose Compilers for Secure
+Multi-Party Computation </a>,
+    </li>
+   
+<li> Yehuda Lindell. <a href="https://eprint.iacr.org/2020/300.pdf" target="_blank">Secure Multiparty Computation (MPC)</a>,
+ Communications of the ACM, January 2021. This is a general and friendly
+ introduction to secure multiparty computation - what it is, how it 
+works, and what it is used for.
+</li>
+<li>
+Yehuda Lindell. <a href="https://eprint.iacr.org/2016/046.pdf" target="_blank">How to Simulate It - A Tutorial on the Simulation Proof Technique</a>,
+ 2016. The simulation paradigm is fundamental to secure computation. 
+However, many have difficulties in understanding how to write simulation
+ proofs. This tutorial explains this proof technique in great detail.
+</li>
+<li>
+Manoj Prabhakaran and Amit Sahai (Eds.). <a href="http://ebooks.iospress.com/volume/secure-multi-party-computation" target="_blank">Secure Multi-Party Computation</a>,
+ IOS Press, 2013. This is a compilation of surveys on the topic of 
+multiparty computation. It focuses on theoretical aspects and is highly 
+useful for those wishing to study the theory of MPC. 
+</li>
+   
+<li>
+ Ran Cannitte. <a href="https://eprint.iacr.org/2000/067.pdf" target="_blank">Universally Composable Security:
+A New Paradigm for Cryptographic Protocols</a>.
+   
+   
+</ul>
+
+<h3>Useful Resources on MPC</h3>
+
+<ul>
+<li>
+Another compilation of MPC resources on Github, maintained by Dragos Rotaru: <a href="https://github.com/rdragos/awesome-mpc" target="_blank">https://github.com/rdragos/awesome-mpc</a>.
+</li>
+ 
+<li>
+Cryptography and Information Security Lab, in India: <a href="https://www.csa.iisc.ac.in/~cris/index.html" target="_blank">https://www.csa.iisc.ac.in/~cris/index.html</a>.  
+</li>
+ 
+   
+<li>
+BIU Winter School (Events).   <a href="https://cyber.biu.ac.il/events/" target="_blank">https://cyber.biu.ac.il/events/</a>.  
+</li>
+   
+   
+<li>
+MPC Seminars. <a href="http://www.cs.tau.ac.il/%7Eiftachh/Courses/Seminars/MPC/Spring17.html" target="_blank">http://www.cs.tau.ac.il/%7Eiftachh/Courses/Seminars/MPC/Spring17.html</a> and   <a href="https://www.cs.tau.ac.il/~iftachh/Courses/Seminars/MPC/Intro.pdf" target="_blank">https://www.cs.tau.ac.il/~iftachh/Courses/Seminars/MPC/Intro.pdf</a>. 
+</li>
+  
+<li>
+Roles of Consortium Partners. <a href="https://priviledge-project.eu/consortium" target="_blank">https://priviledge-project.eu/consortium</a>.   
+</li>
+</ul>
+   
+   
+   
+ <h3>Video Tutorials</h3>
+
+Videos are often a more friendly way of getting started in the field. 
+There are many talks that you can find online.
+<ul>
+<li>  <a href="https://cyber.biu.ac.il/event/the-1st-biu-winter-school/" target="_blank">The 1st BIU Winter School on Secure Computation and Efficiency</a>, 2011. This series of lectures covers the very basics of secure computation and as such is a useful tool. 
+</li>
+<li>  <a href="https://cyber.biu.ac.il/event/the-5th-biu-winter-school/" target="_blank">The 5th BIU Winter School on Advances in Practical Multiparty Computation</a>, 2015. This series of lectures begins with tutorials and includes many more advanced techniques. 
+</li>
+<li> Ran Canetti.  <a href="https://m.youtube.com/playlist?list=PLqc9MPlwib9nSuyH4oUIwPsyDiZ4bwuEE" target="_blank">The Universal Composability Framework</a>, 2016. This series of tutorials introduces the universal composability framework in detail.
+</li>
+   
+   
+ <li> Ashish Choudhury.  <a href="https://onlinecourses.nptel.ac.in/noc21_cs91/preview" target="_blank">The Universal Composability Framework</a> Course, Secure Computation: Part I
+</li>  
+</ul>
+
+
+   
+
+   
+
+   
+
+
+   
+   
+   
+   
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
